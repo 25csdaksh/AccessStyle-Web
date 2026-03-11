@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
+    <!-- Ensures proper scaling on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Short description for SEO and accessibility -->
     <meta name="description" content="A responsive and accessible website demonstrating CSS styling and layout techniques.">
     <title>Home | My Website</title>
+    <!-- External stylesheet link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<a href="#main" class="skip-link">Skip to Main Content</a>
+    <!-- Accessibility: Skip link allows keyboard users to jump directly to main content -->
+    <a href="#main" class="skip-link">Skip to Main Content</a>
 
-<header>
-    <nav aria-label="Main Navigation">
-        <ul class="nav-bar">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Header containing site navigation -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-bar">
+                <!-- aria-current marks the active page -->
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main id="main">
-    <section>
-        <h1>Welcome to My Website</h1>
-        <h2>This is a very interesting website</h2>
-        <p>
-            This site demonstrates accessibility best practices, responsive design,
-            and modern CSS styling techniques such as Flexbox and Grid.
-        </p>
-        <img src="img1.jpg" alt="Preview image showing website design example">
-    </section>
-</main>
+    <!-- Main content area -->
+    <main id="main">
+        <section>
+            <!-- Primary heading for the page -->
+            <h1>Welcome to My Website</h1>
+            <!-- Secondary heading for additional context -->
+            <h2>This is a very interesting website</h2>
+            <!-- Introductory paragraph -->
+            <p>
+                This site demonstrates accessibility best practices, responsive design,
+                and modern CSS styling techniques such as Flexbox and Grid.
+            </p>
+            <!-- Example image with descriptive alt text -->
+            <img src="img1.jpg" alt="Preview image showing website design example">
+        </section>
+    </main>
 
-<footer>
-    <p>&copy; 2026 My Website. All rights reserved.</p>
-</footer>
+    <!-- Footer with copyright -->
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
