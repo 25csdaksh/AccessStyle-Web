@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<a href="#main" class="skip-link">Skip to Main Content</a>
+  <!-- Skip link for accessibility -->
+  <a href="#main" class="skip-link">Skip to Main Content</a>
 
-<nav>
+  <!-- Navigation -->
+  <nav aria-label="Main Navigation">
     <ul class="nav-bar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
-</nav>
+  </nav>
 
-<main id="main">
+  <!-- Main content -->
+  <main id="main">
     <h1>Image Gallery</h1>
-    <section class="grid-gallery">
-        <img src="img1.jpg" alt="Gallery image one">
-        <img src="img2.jpg" alt="Gallery image two">
-        <img src="img3.jpg" alt="Gallery image three">
-        <img src="img4.jpg" alt="Gallery image four">
-        <img src="img5.jpg" alt="Gallery image five">
+
+    <!-- Gallery section -->
+    <section class="grid-gallery" aria-label="Image Gallery">
+      <figure>
+        <img src="img1.jpg" alt="Sunset over mountains">
+        <figcaption>Sunset over mountains</figcaption>
+      </figure>
+      <figure>
+        <img src="img2.jpg" alt="Forest trail in autumn">
+        <figcaption>Forest trail in autumn</figcaption>
+      </figure>
+      <figure>
+        <img src="img3.jpg" alt="City skyline at night">
+        <figcaption>City skyline at night</figcaption>
+      </figure>
+      <figure>
+        <img src="img4.jpg" alt="Ocean waves crashing">
+        <figcaption>Ocean waves crashing</figcaption>
+      </figure>
+      <figure>
+        <img src="img5.jpg" alt="Desert landscape with dunes">
+        <figcaption>Desert landscape with dunes</figcaption>
+      </figure>
     </section>
-</main>
+  </main>
 
 </body>
 </html>
